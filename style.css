@@ -1,60 +1,101 @@
-body {
-  font-family: Arial, sans-serif;
+/* RESET & BASE STYLES */
+* {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background: #fefefe;
-  color: #333;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
 header {
-  background-color: #ff6f91;
+  background: linear-gradient(135deg, #ff6ba7, #ffa07a);
   color: white;
-  padding: 2rem;
+  padding: 3rem 1rem;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-container p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+nav {
+  margin-top: 1rem;
 }
 
 nav a {
   color: white;
   margin: 0 1rem;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: opacity 0.3s;
 }
 
-section {
+nav a:hover {
+  opacity: 0.85;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* CARD SECTIONS */
+.card {
+  background: white;
+  border-radius: 20px;
   padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
-section img {
-  max-width: 150px;
-  border-radius: 50%;
-  display: block;
-  margin: 1rem auto;
+/* HEADINGS */
+h2 {
+  margin-bottom: 1rem;
+  color: #4b4b4b;
+  font-size: 1.6rem;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #eee;
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
 }
 
+/* FORM STYLES */
 form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 input, textarea {
   padding: 0.75rem;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 1rem;
   width: 100%;
 }
 
 button {
   padding: 0.75rem;
-  background-color: #6c63ff;
+  font-size: 1rem;
+  background-color: #ff6ba7;
   color: white;
   border: none;
   border-radius: 8px;
@@ -64,5 +105,15 @@ button {
 }
 
 button:hover {
-  background-color: #554ed8;
+  background-color: #e65b95;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f0f0f0;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 3rem;
 }
